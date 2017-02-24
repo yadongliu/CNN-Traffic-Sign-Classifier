@@ -6,7 +6,7 @@ Training and test data set is from [German Traffic Sign Dataset](http://benchmar
 
 The project has the following files: 
 * Ipython notebook with code: [Traffic_Sign_Classifier.ipynb](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
-* Ipython exported as an html file: [Traffic_Sign_Classifier.html](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.html)
+* Ipython exported as an html file: [Traffic_Sign_Classifier.html](http://htmlpreview.github.io/?https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.html)
 * Project write up in markdown: [project_writeup.md](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/project_writeup.md)
 
 ## How to Run the Project
