@@ -5,9 +5,9 @@ A Udacity class project using Convolutional Neural Network to classify German tr
 Training and test data set is from [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
 
 The project has the following files: 
-* [Ipython notebook with code](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
-* [Ipython exported as an html file](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.html)
-* [Project write up in markdown](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/project_writeup.md)
+* Ipython notebook with code: [Traffic_Sign_Classifier.ipynb](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
+* Ipython exported as an html file: [Traffic_Sign_Classifier.html](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.html)
+* Project write up in markdown: [project_writeup.md](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/project_writeup.md)
 
 ## How to Run the Project
 
