@@ -1,9 +1,5 @@
 #**Traffic Sign Recognition** 
 
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Build a Traffic Sign Recognition Project**
@@ -29,28 +25,23 @@ The goals / steps of this project are the following:
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-###Writeup / README
+###Project Files
 
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
+File List | Links
+------------ | -------------
+Ipython notebook with code | [Traffic_Sign_Classifier.ipynb](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
+Ipython exported as an html file | [Traffic_Sign_Classifier.html](http://htmlpreview.github.io/?https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.html)
+Project write up in markdown | [project_writeup.md](https://github.com/yadongliu/CNN-Traffic-Sign-Classifier/blob/master/project_writeup.md)
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
-
+---
 ###Data Set Summary & Exploration
 
-####1. Provide a basic summary of the data set and identify where in your code the summary was done. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
-
-The code for this step is contained in the second code cell of the IPython notebook.  
-
-I used the pandas library to calculate summary statistics of the traffic
-signs data set:
-
-* The size of training set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+What | Explanation
+------------ | -------------
+Dataset Summary | The dataset are loaded from pickle files, one file for each type of data: training.p, valid.p and test.p <br> * Number of training examples = 34799 <br> * Number of validation examples = 4410 <br> * Number of testing examples = 12630<br> * The shape of a traffic sign image is 32x32x3 <br>* The number of unique classes/labels in the data set is 43
+Dataset Exploration | 
 
 ####2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
