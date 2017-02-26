@@ -15,14 +15,10 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image1]: ./images/dataset_distribution.jpg "Distribution"
+[image2]: ./images/random_samples.jpg "Random Samples"
+[image3]: ./images/test_images.jpg "Test Images"
+[image4]: ./images/prediction_probability.jpg "Prediction Probability"
 
 ## Rubric Points
 
@@ -40,32 +36,26 @@ Project write up in markdown | [project_writeup.md](https://github.com/yadongliu
 
 What | Explanation
 ------------ | -------------
-Dataset Summary | The dataset are loaded from pickle files, one file for each type of data: training.p, valid.p and test.p <br> * Number of training examples = 34799 <br> * Number of validation examples = 4410 <br> * Number of testing examples = 12630<br> * The shape of a traffic sign image is 32x32x3 <br>* The number of unique classes/labels in the data set is 43
-Dataset Exploration | 
+Dataset Summary | The dataset are loaded from pickle files, one file for each type of data: training.p, valid.p and test.p <br> * Number of training examples = 34799 <br> * Number of validation examples = 4410 <br> * Number of testing examples = 12630<br> * The shape of a traffic sign image is 32x32x3 <br> * The number of unique classes/labels in the data set is 43
+Dataset Exploration | Some exploration steps include: <br> * Look at how number of samples are distributed across the 43 classes via a scatter plot <br> * Shows a random sample of 9 images from the training dataset along with their labels/classes
 
-####2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
+Here is an exploratory visualization of the data set. Here is a scatter plot showing how the data are distributed across different labels. 
 
-The code for this step is contained in the third code cell of the IPython notebook.  
+![Distribution][image1]
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
-
-![alt text][image1]
-
-###Design and Test a Model Architecture
-
-####1. Describe how, and identify where in your code, you preprocessed the image data. What tecniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
-
-The code for this step is contained in the fourth code cell of the IPython notebook.
-
-As a first step, I decided to convert the images to grayscale because ...
-
-Here is an example of a traffic sign image before and after grayscaling.
+Here is a random sample of 9 images from the training dataset:
 
 ![alt text][image2]
 
-As a last step, I normalized the image data because ...
+###Design and Test a Model Architecture
 
-####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
+####1. The pre-processing on the dataset I tried include normalization and data augmentation.
+
+Normalization refers to the operation of converting pixel data (0 - 255) to the range (-0.5, 05). This seems to help the training process to converge faster.
+
+I also tried data augmentation by using Tensorflow's Images API, including tf.images.random_flip_up_down and tf.images.random_brightness function during batch training. However, this slows down the training considerably, like 10x slower. In the end, I didn't include data augmentation. For future work, data augmentation could be done separately from training and save the augmented data.  
+
+####2. The LeNet lab model was used as a starting point for this project. 
 
 The code for splitting the data into training and validation sets is contained in the fifth code cell of the IPython notebook.  
 
