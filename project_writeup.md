@@ -112,9 +112,9 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Bumpy road (label: 22)    		| Stop sign   									| 
-| Children crossing (label: 28)	| U-turn 										|
-| No entry			(label: 17)			| Yield											|
+| Bumpy road (label: 22)    		| Bumpy road  									| 
+| Children crossing (label: 28)	| Children crossing										|
+| No entry			(label: 17)			| No entry											|
 | Road work  (label: 25)		|  Road work     |
 | 30 km/h	   (label: 1)	 		| 30 km/h				 				|
 | 50 km/h	   (label: 2)	 		| 50 km/h					 				|
